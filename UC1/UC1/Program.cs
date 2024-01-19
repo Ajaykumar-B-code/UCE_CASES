@@ -4,24 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UC1
+namespace UC2
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            int present = 1;
-            int absent = 0;
-            Random rand = new Random();
-            int random_number = rand.Next(2);
-            if(random_number == present) 
-            {
-                Console.WriteLine("Present");
-            }
-            else
-            {
-                Console.WriteLine("Absent");
-            }
+            int wage_per_hour = 20;
+            int total_hour = 8;
+            int total_wage = wage_per_hour * total_hour;
+            Console.WriteLine(total_wage);
             Console.ReadLine();
         }
     }
